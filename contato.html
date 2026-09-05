@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sugerir um ponto | Ponto de Coleta</title>
+  </head>
+  <body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+    <header>
+      <h1>Pontos de Coleta</h1>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Ínicio</a>
+        <a href="materiais.html">Materiais</a>
+        <a href="contato.html" aria-current="page">Sugerir um ponto</a>
+      </nav>
+    </header>
+    <main id="conteudo" class="">
+      <h2>Sugerir um novo ponto de coleta</h2>
+      <p>
+        Conhece um ponto que não está no catálogo? Aqui vai entrar o formulário
+        que recebe a sugestão e a manda para quem cuida do site.
+      </p>
+      <form id="suggestion-form">
+        <p>
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" required minlength="3" />
+        </p>
+        <p>
+          <label for="email">Seu e-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+            placeholder="seuemail@mail.com"
+          />
+        </p>
+        <p>
+          <label for="phone">Telefone com DDD</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="[0-9]{11}"
+            inputmode="numeric"
+            placeholder="65999999999"
+          />
+        </p>
+        <p>
+          <label for="preferencia">Material que você procura</label>
+          <select name="preferencia" id="preferencia">
+            <option value="all">Todos</option>
+            <option value="battery">Baterias</option>
+            <option value="cooking-oil">Óleo de cozinha</option>
+            <option value="electronics">Eletrônicos</option>
+            <option value="medicine">Medicamentos/Remédios</option>
+            <option value="glass">Vidros</option>
+            <option value="recyclables">Recicláveis</option>
+          </select>
+        </p>
+        <p>
+          <label for="neighborhood">Bairro do ponto</label>
+          <input type="text" name="neighborhood" id="neighborhood" />
+        </p>
+        <p>
+          <label for="message">Endereço e materiais aceitos</label>
+          <textarea type="text" name="message" id="message" rows="5"></textarea>
+        </p>
+        <p>
+          <button type="submit">Enviar sugestão</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>Ponto de Coleta, Várzea Grande, MT.</p>
+      <p><a href="contato.html">Sugerir um ponto novo.</a></p>
+    </footer>
+  </body>
+</html>

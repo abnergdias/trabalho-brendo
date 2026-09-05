@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ponto de Coleta</title>
+  </head>
+  <body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+    <header>
+      <h1>Pontos de Coleta</h1>
+      <nav aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Ínicio</a>
+        <a href="materiais.html">Materiais</a>
+        <a href="contato.html">Sugerir um ponto</a>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <h2>Pontos de Coleta em Várzea Grande</h2>
+      <p>
+        Pilha velha, óleo de cozinha usado, eletrônico quebrado, remédio
+        vencido, vidro e reciclável não podem ir no lixo comum. Digite o CEP do
+        seu bairro e veja onde entregar cada um desses materiais em Várzea
+        Grande.
+      </p>
+      <section aria-label="Busca de pontos de coleta pelo CEP">
+        <p>
+          <label for="zip-code">Buscar pontos próximos pelo CEP</label>
+          <input
+            type="text"
+            id="zip-code"
+            name="zip-code"
+            inputmode="numeric"
+            placeholder="78118900"
+            required
+            minlength="8"
+            maxlength="8"
+            pattern="[0-9]{8}"
+          />
+        </p>
+        <p>
+          <button type="button" id="search-button">Buscar</button>
+        </p>
+      </section>
+      <section>
+        <h3>Filtrar o catálogo por material</h3>
+        <p>
+          <button type="button" data-material="all">Todos</button>
+          <button type="button" data-material="battery">Pilha e bateria</button>
+          <button type="button" data-material="cooking-oil">
+            Óleo de cozinha
+          </button>
+          <button type="button" data-material="electronics">Eletrônico</button>
+          <button type="button" data-material="medicine">Remédio</button>
+          <button type="button" data-material="glass">Vidro</button>
+          <button type="button" data-material="recyclable">Reciclável</button>
+        </p>
+      </section>
+      <ul id="catalog">
+        <li data-materials="battery eletronics glass recyclables">
+          <h3>Ecoponto Centro-Sul</h3>
+          <p>Rua Goiás, 120, Centro-Sul</p>
+          <p>Segunda a sexta, 8h às 17h</p>
+        </li>
+        <li data-materials="medicine">
+          <h3>Fármacia Solidária Cristo Rei</h3>
+          <p>Avenida Brasil, 845, Cristo Rei</p>
+          <p>Segunda a sábado, 7h ás 19h</p>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>Ponto de Coleta, Várzea Grande, MT.</p>
+      <p><a href="contato.html">Sugerir um ponto novo.</a></p>
+    </footer>
+  </body>
+</html>
