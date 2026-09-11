@@ -2,13 +2,14 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/estilo.css">
     <title>Sugerir um ponto | Ponto de Coleta</title>
   </head>
   <body>
     <a href="#conteudo">Pular para o conteúdo</a>
-    <header>
-      <h1>Pontos de Coleta</h1>
-      <nav aria-label="Navegação principal">
+    <header class="site-header">
+      <h1 class="brand">Pontos de Coleta</h1>
+      <nav class="main-nav" aria-label="Navegação principal">
         <a href="index.html">Ínicio</a>
         <a href="materiais.html">Materiais</a>
         <a href="contato.html" aria-current="page">Sugerir um ponto</a>
@@ -21,11 +22,11 @@
         que recebe a sugestão e a manda para quem cuida do site.
       </p>
       <form id="suggestion-form">
-        <p>
+        <p class="field">
           <label for="name">Nome completo</label>
           <input type="text" id="name" name="name" required minlength="3" />
         </p>
-        <p>
+        <p class="field">
           <label for="email">Seu e-mail</label>
           <input
             type="email"
@@ -36,7 +37,7 @@
             placeholder="seuemail@mail.com"
           />
         </p>
-        <p>
+        <p class="field">
           <label for="phone">Telefone com DDD</label>
           <input
             type="tel"
@@ -47,7 +48,7 @@
             placeholder="65999999999"
           />
         </p>
-        <p>
+        <p class="field">
           <label for="preferencia">Material que você procura</label>
           <select name="preferencia" id="preferencia">
             <option value="all">Todos</option>
@@ -59,11 +60,11 @@
             <option value="recyclables">Recicláveis</option>
           </select>
         </p>
-        <p>
+        <p class="field">
           <label for="neighborhood">Bairro do ponto</label>
           <input type="text" name="neighborhood" id="neighborhood" />
         </p>
-        <p>
+        <p class="field">
           <label for="message">Endereço e materiais aceitos</label>
           <textarea type="text" name="message" id="message" rows="5"></textarea>
         </p>
@@ -72,7 +73,7 @@
         </p>
       </form>
     </main>
-    <footer>
+    <footer class="site-footer">
       <p>Ponto de Coleta, Várzea Grande, MT.</p>
       <p><a href="contato.html">Sugerir um ponto novo.</a></p>
     </footer>

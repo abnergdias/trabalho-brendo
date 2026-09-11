@@ -2,13 +2,14 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/estilo.css">
     <title>Ponto de Coleta</title>
   </head>
   <body>
     <a href="#conteudo">Pular para o conteúdo</a>
-    <header>
-      <h1>Pontos de Coleta</h1>
-      <nav aria-label="Navegação principal">
+    <header class="site-header">
+      <h1 class="brand">Pontos de Coleta</h1>
+      <nav class="main-nav" aria-label="Navegação principal">
         <a href="index.html" aria-current="page">Ínicio</a>
         <a href="materiais.html">Materiais</a>
         <a href="contato.html">Sugerir um ponto</a>
@@ -16,7 +17,7 @@
     </header>
     <main id="conteudo">
       <h2>Pontos de Coleta em Várzea Grande</h2>
-      <p>
+      <p class="intro">
         Pilha velha, óleo de cozinha usado, eletrônico quebrado, remédio
         vencido, vidro e reciclável não podem ir no lixo comum. Digite o CEP do
         seu bairro e veja onde entregar cada um desses materiais em Várzea
@@ -55,20 +56,25 @@
           <button type="button" data-material="recyclable">Reciclável</button>
         </p>
       </section>
-      <ul id="catalog">
-        <li data-materials="battery eletronics glass recyclables">
+      <ul class="card" id="catalog">
+        <li class="card" data-materials="battery eletronics glass recyclables">
           <h3>Ecoponto Centro-Sul</h3>
           <p>Rua Goiás, 120, Centro-Sul</p>
-          <p>Segunda a sexta, 8h às 17h</p>
+          <p class="schedule">Segunda a sexta, 8h às 17h</p>
         </li>
-        <li data-materials="medicine">
+        <li class="card" data-materials="medicine">
           <h3>Fármacia Solidária Cristo Rei</h3>
           <p>Avenida Brasil, 845, Cristo Rei</p>
-          <p>Segunda a sábado, 7h ás 19h</p>
+          <p class="schedule">Segunda a sábado, 7h ás 19h</p>
+        </li>
+        <li class="card" data-materials="medicine">
+          <h3>Mercado Ponte Nova</h3>
+          <p>Avenida da FEB, 310, Ponte Nova</p>
+          <p class="schedule">Segunda a sábado, 7h ás 19h</p>
         </li>
       </ul>
     </main>
-    <footer>
+    <footer class="site-footer">
       <p>Ponto de Coleta, Várzea Grande, MT.</p>
       <p><a href="contato.html">Sugerir um ponto novo.</a></p>
     </footer>
