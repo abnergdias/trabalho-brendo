@@ -6,6 +6,7 @@
     <title>Sugerir um ponto | Ponto de Coleta</title>
   </head>
   <body>
+    <div class="page">
     <a href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
       <h1 class="brand">Pontos de Coleta</h1>
@@ -26,40 +27,42 @@
           <label for="name">Nome completo</label>
           <input type="text" id="name" name="name" required minlength="3" />
         </p>
-        <p class="field">
-          <label for="email">Seu e-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            autocomplete="email"
-            placeholder="seuemail@mail.com"
-          />
-        </p>
-        <p class="field">
-          <label for="phone">Telefone com DDD</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            pattern="[0-9]{11}"
-            inputmode="numeric"
-            placeholder="65999999999"
-          />
-        </p>
-        <p class="field">
-          <label for="preferencia">Material que você procura</label>
-          <select name="preferencia" id="preferencia">
-            <option value="all">Todos</option>
-            <option value="battery">Baterias</option>
-            <option value="cooking-oil">Óleo de cozinha</option>
-            <option value="electronics">Eletrônicos</option>
-            <option value="medicine">Medicamentos/Remédios</option>
-            <option value="glass">Vidros</option>
-            <option value="recyclables">Recicláveis</option>
-          </select>
-        </p>
+        <div class="field-row">
+          <p class="field">
+            <label for="email">Seu e-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="email"
+              placeholder="seuemail@mail.com"
+            />
+          </p>
+          <p class="field">
+            <label for="phone">Telefone com DDD</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{11}"
+              inputmode="numeric"
+              placeholder="65999999999"
+            />
+          </p>
+          <p class="field">
+            <label for="preferencia">Material que você procura</label>
+            <select name="preferencia" id="preferencia">
+              <option value="all">Todos</option>
+              <option value="battery">Baterias</option>
+              <option value="cooking-oil">Óleo de cozinha</option>
+              <option value="electronics">Eletrônicos</option>
+              <option value="medicine">Medicamentos/Remédios</option>
+              <option value="glass">Vidros</option>
+              <option value="recyclables">Recicláveis</option>
+            </select>
+          </p>
+        </div>
         <p class="field">
           <label for="neighborhood">Bairro do ponto</label>
           <input type="text" name="neighborhood" id="neighborhood" />
@@ -77,5 +80,6 @@
       <p>Ponto de Coleta, Várzea Grande, MT.</p>
       <p><a href="contato.html">Sugerir um ponto novo.</a></p>
     </footer>
+    </div>
   </body>
 </html>

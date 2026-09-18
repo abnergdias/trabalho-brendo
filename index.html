@@ -6,6 +6,7 @@
     <title>Ponto de Coleta</title>
   </head>
   <body>
+    <div class="page">
     <a href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
       <h1 class="brand">Pontos de Coleta</h1>
@@ -24,7 +25,8 @@
         Grande.
       </p>
       <section aria-label="Busca de pontos de coleta pelo CEP">
-        <p>
+        <div class="zip-search">
+          <p class="field">
           <label for="zip-code">Buscar pontos próximos pelo CEP</label>
           <input
             type="text"
@@ -38,25 +40,42 @@
             pattern="[0-9]{8}"
           />
         </p>
-        <p>
+        <p class="field field-action">
+          <span class="ghost-label" aria-hidden="true">Ação</span>
           <button type="button" id="search-button">Buscar</button>
         </p>
+      </div>
       </section>
       <section>
         <h3>Filtrar o catálogo por material</h3>
-        <p>
-          <button type="button" data-material="all">Todos</button>
-          <button type="button" data-material="battery">Pilha e bateria</button>
-          <button type="button" data-material="cooking-oil">
+        <p class="filters">
+          <button class="filter" type="button" data-material="all">Todos</button>
+          <button class="filter" type="button" data-material="battery">Pilha e bateria</button>
+          <button class="filter" type="button" data-material="cooking-oil">
             Óleo de cozinha
           </button>
-          <button type="button" data-material="electronics">Eletrônico</button>
-          <button type="button" data-material="medicine">Remédio</button>
-          <button type="button" data-material="glass">Vidro</button>
-          <button type="button" data-material="recyclable">Reciclável</button>
+          <button class="filter" type="button" data-material="electronics">Eletrônico</button>
+          <button class="filter" type="button" data-material="medicine">Remédio</button>
+          <button class="filter" type="button" data-material="glass">Vidro</button>
+          <button class="filter" type="button" data-material="recyclable">Reciclável</button>
         </p>
       </section>
-      <ul class="card" id="catalog">
+      <ul class="cards" id="catalog">
+        <li class="card" data-materials="battery eletronics glass recyclables">
+          <h3>Ecoponto Centro-Sul</h3>
+          <p>Rua Goiás, 120, Centro-Sul</p>
+          <p class="schedule">Segunda a sexta, 8h às 17h</p>
+        </li>
+        <li class="card" data-materials="medicine">
+          <h3>Fármacia Solidária Cristo Rei</h3>
+          <p>Avenida Brasil, 845, Cristo Rei</p>
+          <p class="schedule">Segunda a sábado, 7h ás 19h</p>
+        </li>
+        <li class="card" data-materials="medicine">
+          <h3>Mercado Ponte Nova</h3>
+          <p>Avenida da FEB, 310, Ponte Nova</p>
+          <p class="schedule">Segunda a sábado, 7h ás 19h</p>
+        </li>
         <li class="card" data-materials="battery eletronics glass recyclables">
           <h3>Ecoponto Centro-Sul</h3>
           <p>Rua Goiás, 120, Centro-Sul</p>
@@ -78,5 +97,6 @@
       <p>Ponto de Coleta, Várzea Grande, MT.</p>
       <p><a href="contato.html">Sugerir um ponto novo.</a></p>
     </footer>
+    </div>  
   </body>
 </html>
